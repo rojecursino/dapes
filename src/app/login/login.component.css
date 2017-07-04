@@ -1,0 +1,178 @@
+#login-wrapper {
+  width: 100%;
+  max-width: 500px; 
+}
+
+#login-wrapper #login-container a {
+     text-decoration: underline; 
+     color: #222;
+     vertical-align: middle; 
+     font-size: smaller;
+     font-size: 13px;
+}
+
+#login-wrapper #login-container a:hover {
+     text-decoration: none; 
+     color: #555;
+}
+
+a{text-decoration: underline; color: #222}
+a:hover{text-decoration: none; color: #555}
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#login-wrapper #login-container input.ui-inputtext {
+    font-size: 1em;
+    color: #4f575b;
+    margin: 0;
+    outline: medium none;
+    padding: 10px .25em;
+    background: #ffffff;
+    font-weight: normal;
+    border: 0 none;
+    border-bottom: 1px solid #DDD;
+    border-radius: 0;
+}
+
+#login-wrapper #login-container input.ui-inputtext:focus {
+    outline: 0 none;
+    box-shadow: 0 0 0;
+    border-bottom: 2px solid #548a28;
+    
+}
+
+.input-error{
+  border-bottom: 2px solid #cc0000 !important;
+}
+
+.text-danger{
+  color: #cc0000;
+}
+
+.text-center{text-align: center}
+
+a.socialbox {
+  font-weight: 300;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+  text-align:left; 
+}
+
+a.socialbox.facebook {
+  background-color: #215d90;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+a.socialbox.linkedin {
+  background-color: #0073b2;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+a.socialbox.facebook:hover {
+  background-color: #104c80;
+}
+a.socialbox.linkedin:hover {
+  background-color: #0062a1;
+}
+
+a.socialbox .social-icon {
+  line-height: 28px;
+  font-size: 26px;
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0 10px;
+  color:#FFF
+}
+a.socialbox .description {
+  display: inline-block;
+  vertical-align: middle;
+  padding:0 10px;
+  font-size: 20px;
+  color:#FFF
+}
+
+a.socialbox .description span {
+  display: block;
+  line-height: 16px;
+}
+#login-wrapper #login-container{
+    text-align: left;
+}
+.button-full{width: 100%}
+
+.button-success{
+   display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 10px 0;
+  border: 1px solid #548a28;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: rgba(255,255,255,0.9);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #659b39;
+  text-shadow: -1px -1px 0 rgba(24,165,14,0.66) ;
+  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.button-default{
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 10px 0;
+  border: 1px solid rgba(200,200,200,1);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: rgba(55,55,55,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #EEE;
+  text-shadow: -1px -1px 0 rgba(250,250,250,0.66) ;
+  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.button-primary{
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 10px 0;
+  border: 1px solid #018dc4;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: rgba(255,255,255,0.9);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #0199d9;
+  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+#login-wrapper #login-container .ui-g-12, #login-wrapper #login-container .ui-g-6 {
+    padding: .4em .8em;
+}
+.m-t-20{
+  margin-top: 20px; 
+}

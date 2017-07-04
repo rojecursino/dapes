@@ -1,0 +1,88 @@
+<div class="ui-g-12" style="height: 60px; background: #FFF; text-align: center; background: #659b39">
+    <img style="max-width: 50px; max-height: 50px;border-radius: 6px;" src="https://s3-us-west-2.amazonaws.com/dapesweb/dapes_verde.jpg">
+</div>
+
+<body class="login-body">
+    <div id="login-wrapper">
+        <div id="login-container">
+            <div class="ui-g-12 text-center">
+                <h1>LOGIN</h1>
+                <h5>Acesse com seu e-mail</h5>
+            </div>
+            <div style="clear:both"></div>
+            <form #f="ngForm" novalidate (ngSubmit)="doLogin(f.value, f.valid)">
+                <div class="ui-g ui-fluid">
+                    <small [hidden]="!error" class="text-danger">
+                        Login ou senha errados
+                    </small>
+                    <div class="ui-g-12 form-group">
+                        <input type="text" placeholder="E-mail ou CPF" class="form-control" name="username" [ngModel]="user.username" required minlength="1"
+                            #username="ngModel" class="ui-inputtext ui-corner-all ui-state-default ui-widget">
+                        <small [hidden]="username.valid || (username.pristine && !f.submitted)" class="text-danger">
+                           E-mail ou CPF inválido.
+                        </small>
+                    </div>
+                    <div class="ui-g-12 form-group">
+                        <input type="password" placeholder="Senha" class="form-control" name="password" [ngModel]="user.password" required minlength="6"
+                            maxlength="6" #password="ngModel" class="ui-inputtext ui-corner-all ui-state-default ui-widget">
+                        <small [hidden]="password.valid || (password.pristine && !f.submitted)" class="text-danger">
+                           Informe a senha de 6 dígitos.
+                        </small>
+                    </div>
+                     <div class="ui-g-12">
+                        <small><a href="#">Esqueceu sua senha?</a></small>
+                    </div>
+                    <div class="ui-g-6 m-t-20">
+                        <button type="submit" class="button-full button-default">
+                            LIMPAR
+                        </button>
+                    </div>
+                    <div class="ui-g-6 m-t-20">
+                        <button type="submit" class="button-full button-success">
+                            ENTRAR
+                        </button>
+                    </div>
+                    <div class="ui-g-12 m-t-20">
+                    </div>
+                    <div class="ui-g-5">
+                        <hr>
+                    </div>
+                    <div class="ui-g-2 text-center"><small>ou</small></div>
+                    <div class="ui-g-5">
+                        <hr>
+                    </div>
+                    <div class="ui-g-12 text-center m-t-20">
+                        <small>Faça login usando suas redes sociais:</small>
+                    </div>
+                    <div class="ui-g-6 m-t-20">
+                        <a class="socialbox facebook" href="#">
+                            <div class="social-icon">
+                                <i class="fa fa-fw fa-facebook"></i>
+                            </div>
+                            <div class="description">
+                                <span class="ng-binding-shares"></span>
+                                <span class="ng-binding-likes"></span>
+                                <span>Facebook</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ui-g-6 m-t-20">
+                        <a class="socialbox linkedin" href="#">
+                            <div class="social-icon">
+                                <i class="fa fa-fw fa-linkedin"></i>
+                            </div>
+                            <div class="description">
+                                <span class="ng-binding"></span>
+                                <span>LinkedIn</span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="login-footer">
+            <a href="#">Não possui cadastro? Cadastre-se agora!</a>
+        </div>
+    </div>
+</body>

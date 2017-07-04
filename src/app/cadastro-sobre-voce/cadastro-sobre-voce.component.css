@@ -1,0 +1,39 @@
+
+a{text-decoration: underline; color: #222}
+a:hover{text-decoration: none; color: #555}
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+input.ui-inputtext {
+    font-size: 1em;
+    color: #4f575b;
+    margin: 0;
+    outline: medium none;
+    padding: 10px .25em;
+    background: #ffffff;
+    font-weight: normal;
+    border: 0 none;
+    border-bottom: 1px solid #DDD;
+    border-radius: 0;
+}
+
+input.ui-inputtext:focus {
+    outline: 0 none;
+    box-shadow: 0 0 0;
+    border-bottom: 2px solid #548a28;
+    
+}
+
+.input-error{
+  border-bottom: 2px solid #cc0000 !important;
+}
+
+.text-danger{
+  color: #cc0000;
+}
+
+.text-center{text-align: center}

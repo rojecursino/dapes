@@ -1,0 +1,108 @@
+<div class="ui-g-12" style="height: 60px; background: #FFF; text-align: center; background: #659b39">
+    <img style="max-width: 50px; max-height: 50px;border-radius: 6px;" src="https://s3-us-west-2.amazonaws.com/dapesweb/dapes_verde.jpg">
+</div>
+
+<body class="login-body">
+
+    <div id="login-wrapper">
+        <div id="login-container">
+            <div class="ui-fluid">
+                <div class="ui-g-12">
+                    <h1>Segurança e Facilidade</h1>
+                    <br/>
+                    <h2>Sem taxas e totalmente online</h2>
+                    <br/>
+                    <small>Cadastre-se usando as redes sociais</small>
+                </div>
+            </div>
+            <div class="ui-fluid">
+                <div class="ui-g-6">
+                    <a class="socialbox facebook" href="#">
+                        <div class="social-icon">
+                            <i class="fa fa-fw fa-facebook"></i>
+                        </div>
+                        <div class="description">
+                            <span class="ng-binding-shares"></span>
+                            <span class="ng-binding-likes"></span>
+                            <span>Facebook</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="ui-g-6">
+                    <a class="socialbox linkedin" href="#">
+                        <div class="social-icon">
+                            <i class="fa fa-fw fa-linkedin"></i>
+                        </div>
+                        <div class="description">
+                            <span class="ng-binding"></span>
+                            <span>LinkedIn</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ui-g-5">
+                <hr>
+            </div>
+            <div class="ui-g-2 text-center"><small>ou</small></div>
+            <div class="ui-g-5">
+                <hr>
+            </div>
+
+            <div class="ui-g-12">
+                <small>Prencha os dados abaixo</small>
+            </div>
+            <div style="clear:both"></div>
+            <form #f="ngForm" novalidate (ngSubmit)="save(f.value, f.valid)">
+                <div class="ui-g ui-fluid ">
+                    <div class="ui-g-12 form-group">
+                        <input type="text" placeholder="Nome completo" ng-class="{'input-error': !nome.valid && !nome.pristine}" class="form-control ui-inputtext"
+                            name="nome" [ngModel]="user.nome" required minlength="1" #nome="ngModel">
+                        <small [hidden]="nome.valid || (nome.pristine && !f.submitted)" class="text-danger">
+                            Digite seu nome completo.
+                        </small>
+                    </div>
+                    <div class="ui-g-12 form-group">
+                        <input type="email" placeholder="E-mail" ng-class="{'input-error': !email.valid && !email.pristine}" class="form-control ui-inputtext"
+                            name="email" [ngModel]="user.email" required #email="ngModel" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$">
+                        <small [hidden]="email.valid || (email.pristine && !f.submitted)" class="text-danger">
+                            E-mail inválido.
+                        </small>
+                    </div>
+                    <div class="ui-g-6 form-group">
+                        <input type="password" placeholder="Senha (6 números)" ng-class="{'input-error': !password.valid && !password.pristine}"
+                            class="form-control ui-inputtext" name="password" [ngModel]="user.password" required validateEqual="confirmPassword"
+                            reverse="true" #password="ngModel">
+                        <small [hidden]="password.valid || (password.pristine && !f.submitted)" class="text-danger">
+                            Digite sua senha de 6 números.
+                        </small>
+                    </div>
+                    <div class="ui-g-6 form-group">
+                        <input type="password" placeholder="Confirme sua senha" ng-class="{'input-error': confirmPassword.valid && !confirmPassword.pristine}"
+                            class="form-control ui-inputtext" name="confirmPassword" [ngModel]="user.confirmPassword" required
+                            validateEqual="password" reverse="false" #confirmPassword="ngModel">
+                        <small [hidden]="confirmPassword.valid || (confirmPassword.pristine && !f.submitted)" class="text-danger">
+                            Senha e confirmação de senha estão diferentes
+                        </small>
+                    </div>
+                    <div class="ui-g-12 m-t-20">
+                    </div>
+                    <div class="ui-g-6">
+                        <button type="button" class="button-full button-default">
+                            LIMPAR
+                        </button>
+                    </div>
+                    <div class="ui-g-6">
+                        <button type="button" class="button-full button-success">
+                            CADASTRE-SE                
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="login-footer">
+            <a href="#">Já criou o seu login? Acesse sua conta.</a>
+
+        </div>
+    </div>
+</body>
